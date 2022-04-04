@@ -505,4 +505,70 @@
     .iconinfo a:hover{ 
         color:red ;
     }   
+@media screen and (min-width: 992px) {
+    .hebergements {
+        width: 100%;
+        height: 700px;
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .hebergements h2 {
+        font-size: 16px;
+    }
+
+    .hebergements p {
+        font-size: 12px;
+    }
+
+    #hebergements-marseille {
+        width: 65%;
+        height: 100%;
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    #hebergements-options {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .hebergements-cartes {
+        width: 30%;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .hebergements-cartes img {
+        width: 95%;
+        height: 60%;
+        align-self: center;
+        padding-top: 5px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .hebergements-classification i {
+        color: #0065FC;
+    }
+
+    #hebergements-pluspopulaire {
+        width: 25%;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+    }
+
+    #hebergements-pluspopulaires-options img {
+        width: 40%;
+        height: 90%;
+    }
 }
