@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.act_titre{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+.activites{
+    display : flex;
+    width : 100%;
+    justify-content: space-between;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 2px;
+}
+.div_activites{
+    display: flex;
+    justify-content: space-around;
+    width: 48%;
+    height: 300px;
+}
+.activites_droite{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bigcard{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    border-radius: 16px;
+    height: 100%;
+    box-shadow: 0 4px 4px 0 grey;
+}
+.activites_gimg{
+    object-fit: cover;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.littlecard{
+    display: flex;
+    flex-direction: column;;
+    height: 40%;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px 0 grey;
+}
+.activites_limg{
+    object-fit: cover;
+    height: 60%;
+    border-radius: 20px 20px 0 0;
+}
