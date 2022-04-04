@@ -1,0 +1,637 @@
+/*Desktop*/
+@media(min-width:992px){
+    main{
+        width:100%;
+        height: 100%;
+        padding:20px;
+    }   
+    header{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        width:90%;
+        font-family: 'Raleway', sans-serif;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .logo img{
+        width: 200px;
+        height: 80px;
+    }
+    .menu{
+       margin-top: 40px;
+    }
+    .menu a{
+        text-decoration: none;
+         font-size: 20px;
+         color: black;
+         margin-left: 50px;
+    }
+    .menu a:hover{
+        color:#0065fc;
+        border-top:3px solid #0065fc;
+        padding: 30px;
+    }
+    .info{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .recherche{
+        position: relative;
+        width: 400px;
+        height: 50px;
+        border: 1px solid #dacbcb;
+        border-radius: 10px;
+        background-color: #dacbcb;
+    }
+    .location{
+        font-size:20px;
+        width: 8%;
+        height: 35px;
+        float: left;
+        padding: 15px;
+    }
+    input[ type="search"]{
+        font-weight: bold;
+        width: 55%;
+        height: 50px;;
+        font-size: 15px;
+        border: none;
+    }
+    a.iconr{
+        display: none;
+    }
+    button{
+        position: absolute;
+        width:30%;
+        height:100%;
+        font-size: 15px;
+        color: white;
+        border: none;
+        float: right;
+        background-color:#0065fc;
+        padding: 10px;
+        border-radius: 0px 10px 10px 0px;
+    }
+    .filtres{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+    .filtres p{
+        padding:5px;
+        font-weight: bold;
+    }
+    .iconfiltre{
+        display: flex;
+        flex-direction: row;
+    }
+    .icon2{
+        display: flex;
+        flex-direction: row;
+    }
+    .icon1{
+        display: flex;
+        flex-direction: row;
+    }
+    .economique,.familial,.romantique{
+        display: flex;
+        align-items: center;
+        width: 145px;
+        height: 38px;
+        border-radius: 30px;
+        margin-left: 20px;
+        border: 2px solid #dacbcb;
+    }
+    .animaux{
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 38px;
+        margin-left: 20px;
+        border-radius: 30px;
+        border: 2px solid #dacbcb;
+    }
+    .economique a,.familial a,.romantique a{
+        display: flex;
+        width: 42px;
+        height:42px;
+        text-decoration: none; 
+        border-radius: 25px;
+        color:#0065fc;
+        background-color: #c4c4f9;
+        justify-content: center;
+        align-items: center;
+    }
+    .animaux a{
+        display: flex;
+        width: 42px;
+        height:42px;
+        text-decoration: none; 
+        border-radius: 25px;
+        color:#0065fc;
+        background-color: #c4c4f9;
+        justify-content: center;
+        align-items: center;
+    }
+    .filtres a:hover{
+        color: white;
+        background-color:#0065fc;
+    }
+    .infologement{
+        display: flex;
+        flex-direction: row;
+    }
+    .iconinfo{
+        width: 30px;
+        height: 30px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #dacbcb ;
+        margin:5px 15px 0px 0px;
+    }
+    .iconinfo a{ 
+        color:#0065fc ;
+    }  
+    .iconinfo a:hover{ 
+        color:red ;
+    }   
+}
+/*Tablette*/
+@media(min-width:768px) and (max-width:992px){
+    main{
+        width:100%;
+        height: 100%;
+        padding:20px;
+    }   
+    header{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        width:90%;
+        font-family: 'Raleway', sans-serif;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo img{
+       width: 150px;
+       height: 80px;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+    .menu a{
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        padding:30px;
+    }
+    .menu a:hover{
+        color:#0065fc;
+        border-top:3px solid #0065fc;
+    }
+    .info{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .recherche{
+        position: relative;
+        width: 400px;
+        height: 50px;
+        border: 1px solid #dacbcb;
+        border-radius: 10px;
+        background-color: #dacbcb;
+    }
+    .location{
+        font-size:20px;
+        width: 8%;
+        height: 35px;
+        float: left;
+        padding: 15px;
+    }
+    input[ type="search"]{
+        font-weight: bold;
+        width: 55%;
+        height: 50px;;
+        font-size: 15px;
+        border: none;
+    }
+    a.iconr{
+        display: none;
+    }
+    button{
+        position: absolute;
+        width:30%;
+        height:100%;
+        font-size: 15px;
+        color: white;
+        border: none;
+        float: right;
+        background-color:#0065fc;
+        padding: 10px;
+        border-radius: 0px 10px 10px 0px;
+    }
+    .filtres{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+    .filtres p{
+        padding:5px;
+        font-weight: bold;
+    }
+    .iconfiltre{
+        display: flex;
+        flex-direction: row;
+    }
+    .icon2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .icon1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .economique,.familial,.romantique{
+        display: flex;
+        align-items: center;
+        width: 145px;
+        height: 38px;
+        border-radius: 30px;
+        margin-left: 15px;
+        border: 2px solid #dacbcb;
+    }
+    .animaux{
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 38px;
+        margin-left: 15px;
+        border-radius: 30px;
+        border: 2px solid #dacbcb;
+    }
+    .economique a,.familial a,.romantique a{
+        display: flex;
+        width: 42px;
+        height:42px;
+        text-decoration: none; 
+        border-radius: 25px;
+        color:#0065fc;
+        background-color: #c4c4f9;
+        justify-content: center;
+        align-items: center;
+    }
+    .animaux a{
+        display: flex;
+        width: 42px;
+        height:42px;
+        text-decoration: none; 
+        border-radius: 25px;
+        color:#0065fc;
+        background-color: #c4c4f9;
+        justify-content: center;
+        align-items: center;
+    }
+    .filtres a:hover{
+        color: white;
+        background-color:#0065fc;
+    }
+    .infologement{
+        display: flex;
+        flex-direction: row;
+    }
+    .iconinfo{
+        width: 30px;
+        height: 30px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #dacbcb ;
+        margin:5px 15px 0px 0px;
+    }
+    .iconinfo a{ 
+        color:#0065fc;
+    }
+    .iconinfo a:hover{ 
+        color:red ;
+    }     
+}
+/*Mobile*/
+@media(max-width:768px){
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height: 100%;
+        padding:20px;
+    }   
+    header{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:flex-start;
+        width:90%;
+        font-family: 'Raleway', sans-serif;
+    }
+    nav{
+        display: flex;
+        flex-direction:column;
+    }
+    .logo{
+        display: flex;
+       justify-content:center;
+    }
+    .logo img{
+        width: 150px;
+        height: 80px;
+    }
+    .menu{
+        display: flex;
+        align-items:flex-start;
+        justify-content:center;  
+    }
+    .menu a{
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        padding: 30px;
+        border-bottom:3px solid #dacbcb;
+    }
+    .menu :hover{
+        color:#0065fc;
+        border-bottom:3px solid #0065fc;
+    }
+    .info{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .recherche{
+        position: relative;
+        width:320px;
+        height: 50px;
+        border: 1px solid #dacbcb;
+        border-radius: 10px;
+        background-color: #0065fc;
+        margin-bottom: 10px;
+    }
+    .location{
+        font-size:20px;
+        width: 8%;
+        height:90%;
+        float: left;
+        padding: 15px;
+        background-color: #dacbcb;
+        border-radius: 10px 0px 0px 10px;
+    }
+    input[ type="search"]{
+        font-weight: bold;
+        width: 68%;
+        height: 50px;;
+        font-size: 15px;
+        border: none;
+    }
+    .fa-solid fa-magnifying-glass{
+        position: absolute;
+        color: white;
+        border: none;
+    }
+    .iconr{
+        padding: 10px;
+        color: white;
+    }
+    button{
+     display:none;
+    }
+    .filtres{
+        display: flex;
+        flex-direction:column;
+    }
+    .iconfiltre{
+        display: flex;
+        flex-direction: column;
+    }
+    .icon2{
+        display: flex;
+        flex-direction:column;
+        margin-top: 10px;
+    }
+    .icon1{
+        display: flex;
+        flex-direction:row;
+    }
+    .economique{
+        margin-right: 20px;
+    }
+    .filtres p{
+        padding:5px;
+        font-weight: bold;
+    }
+    .economique,.familial,.romantique{
+        display: flex;
+        align-items: center;
+        width: 145px;
+        height: 38px;
+        border-radius: 30px;
+        border: 2px solid #dacbcb;
+    }
+    .animaux{
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 38px;
+        margin-top: 10px;
+        border-radius: 30px;
+        border: 2px solid #dacbcb;
+    }
+    .economique a,.familial a,.romantique a{
+        display: flex;
+        width: 42px;
+        height:42px;
+        text-decoration: none; 
+        border-radius: 25px;
+        color:#0065fc;
+        background-color: #c4c4f9;
+        justify-content: center;
+        align-items: center;
+    }
+    .animaux a{
+        display: flex;
+        width: 42px;
+        height:42px;
+        text-decoration: none; 
+        border-radius: 25px;
+        color:#0065fc;
+        background-color: #c4c4f9;
+        justify-content: center;
+        align-items: center;
+    }
+    .filtres a:hover{
+        color: white;
+        background-color:#0065fc;
+    }
+    .infologement{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+    .iconinfo{
+        width: 25px;
+        height: 25px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #dacbcb ;
+        margin:10px 15px 0px 0px;
+    }
+    .iconinfo a{ 
+        color:#0065fc ;
+    } 
+    .iconinfo a:hover{ 
+        color:red ;
+    }   
+@media screen and (min-width: 992px) {
+    .hebergements {
+        width: 100%;
+        height: 550px;
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .hebergements h1 {
+        width: 85%;
+        font-size: 22px;
+        text-align: start;
+    }
+
+    .hebergements h2 {
+        font-size: 15px;
+    }
+
+    .hebergements h3 {
+        width: 85%;
+        font-size: 18px;
+        text-align: start;
+    }
+
+    .hebergements p {
+        font-size: 13px;
+    }
+
+    #hebergements-marseille {
+        width: 65%;
+        height: 100%;
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    #hebergements-options {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .hebergements-cartes {
+        width: 30%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 16px;
+        box-shadow: 0 4px 4px 0 grey;
+    }
+
+    .hebergements-cartes img {
+        width: 95%;
+        height: 50%;
+        align-self: center;
+        object-fit: cover;
+        padding-top: 5px;
+        border-radius: 16px 16px 0 0;
+    }
+
+    .hebergements-cartes-info {
+        width: 90%;
+        align-self: flex-end;
+    }
+
+    .hebergements-classification i {
+        color: #0065FC;
+    }
+
+    .hebergements-classification .etoile-grise {
+        color: whitesmoke;
+    }
+
+    #hebergements-pluspopulaire {
+        width: 25%;
+        height: 100%;
+        background-color: #F2F2F2;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hebergement-pluspopulaire-title {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #hebergements-pluspopulaires-options {
+        width: 90%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .hebergements-pluspopulaires-cartes {
+        width: 100%;
+        height: 130px;
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        border-radius: 16px;
+        box-shadow: 0 4px 4px 0 grey;
+    }
+
+    .hebergements-pluspopulaires-cartes img {
+        width: 45%;
+        height: 95%;
+        object-fit: cover;
+        align-self: center;
+        border-radius: 16px 0 0 16px;
+    }
+
+    .hebergements-pluspopulaires-info {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+}
