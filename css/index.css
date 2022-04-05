@@ -559,7 +559,7 @@
         flex-direction: column;
         background-color: white;
         border-radius: 16px;
-        box-shadow: 0 4px 4px 0 grey;
+        box-shadow: 0 2px 2px 0 grey;
     }
 
     .hebergements-cartes img {
@@ -616,7 +616,7 @@
         justify-content: space-around;
         background-color: white;
         border-radius: 16px;
-        box-shadow: 0 4px 4px 0 grey;
+        box-shadow: 0 2px 2px 0 grey;
     }
 
     .hebergements-pluspopulaires-cartes img {
@@ -632,5 +632,76 @@
         width: 50%;
         display: flex;
         flex-direction: column;
+    }
+
+/* Mobile */
+
+@media screen and (max-width: 767px){
+    .hebergements {
+        flex-direction: column-reverse;
+        height: 1600px;
+    }
+
+    #hebergements-pluspopulaire {
+        width: 100%;
+        height: 30%;
+    }
+
+    #hebergements-pluspopulaires-options {
+        height: 85%;
+        align-content: space-around;
+    }
+
+    .hebergements-pluspopulaires-cartes {
+        height: 30%;
+    }
+
+    .hebergements-pluspopulaires-info p {
+        margin-top: 0px;
+    }
+
+    #hebergements-marseille {
+        width: 100%;
+        height: 70%;
+        background-color: white;
+    }
+
+    .hebergements-cartes {
+        width: 100%;
+        height: 150px;
+    }
+
+    .hebergements-cartes-info {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-self: center;
+    }
+
+    .hebergements-cartes h2 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .hebergements-cartes p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .hebergements-cartes img {
+        height: 50%;
+    }
+
+    .hebergements-cartes-info {
+        height: 45%;
+    }
+
+    .hebergements-classification i {
+        font-size: 14px;
+    }
+
+    #hebergements-marseille h3 {
+        margin-top: 0px;
     }
 }
