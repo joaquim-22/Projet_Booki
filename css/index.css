@@ -514,125 +514,209 @@
         justify-content: space-around;
     }
 
+#hebergements-marseille a {
+    text-decoration: none;
+    color: black;
+}
+
+.hebergements h1 {
+    width: 85%;
+    font-size: 22px;
+    text-align: start;
+}
+
+.hebergements h2 {
+    font-size: 15px;
+}
+
+.hebergements h3 {
+    width: 85%;
+    font-size: 18px;
+    text-align: start;
+}
+
+.hebergements p {
+    font-size: 13px;
+}
+
+#hebergements-marseille {
+    width: 65%;
+    height: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#hebergements-options {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hebergements-cartes {
+    width: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 2px 2px 0 grey;
+}
+
+.hebergements-cartes img {
+    width: 95%;
+    height: 50%;
+    align-self: center;
+    object-fit: cover;
+    padding-top: 5px;
+    border-radius: 16px 16px 0 0;
+}
+
+.hebergements-cartes-info {
+    width: 90%;
+    align-self: flex-end;
+}
+
+.hebergements-classification i {
+    color: #0065FC;
+}
+
+.hebergements-classification .etoile-grise {
+    color: whitesmoke;
+}
+
+#hebergements-pluspopulaire {
+    width: 25%;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hebergement-pluspopulaire-title {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hebergements-pluspopulaires-options {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.hebergements-pluspopulaires-cartes {
+width: 100%;
+height: 130px;
+display: flex;
+justify-content: space-around;
+background-color: white;
+border-radius: 16px;
+box-shadow: 0 2px 2px 0 grey;}
+
+.hebergements-pluspopulaires-cartes img {
+    width: 45%;
+    height: 95%;
+    object-fit: cover;
+    align-self: center;
+    border-radius: 16px 0 0 16px;
+}
+
+.hebergements-pluspopulaires-info {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tablette */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .hebergements {
+        flex-direction: column-reverse;
+        height: 1200px;
+    }
+
     .hebergements h1 {
-        width: 85%;
-        font-size: 22px;
-        text-align: start;
+        font-size: 24px;
     }
 
-    .hebergements h2 {
-        font-size: 15px;
+    #hebergements-pluspopulaire {
+        width: 100%;
+        height: 50%;
     }
 
-    .hebergements h3 {
-        width: 85%;
-        font-size: 18px;
-        text-align: start;
+    #hebergements-pluspopulaires-options {
+        height: 85%;
+        align-content: space-around;
     }
 
-    .hebergements p {
-        font-size: 13px;
+    .hebergements-pluspopulaires-cartes {
+        height: 30%;
+    }
+
+    .hebergements-pluspopulaires-info {
+        justify-content: space-evenly;
+    }
+
+    .hebergements-pluspopulaires-info p {
+        margin-top: 0px;
     }
 
     #hebergements-marseille {
-        width: 65%;
-        height: 100%;
-        background-color: #F2F2F2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 20px;
-    }
-
-    #hebergements-options {
-        width: 90%;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        width: 100%;
+        height: 50%;
+        background-color: white;
     }
 
     .hebergements-cartes {
-        width: 30%;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        border-radius: 16px;
-        box-shadow: 0 2px 2px 0 grey;
-    }
-
-    .hebergements-cartes img {
-        width: 95%;
-        height: 50%;
-        align-self: center;
-        object-fit: cover;
-        padding-top: 5px;
-        border-radius: 16px 16px 0 0;
+        width: 45%;
+        height: 150px;
     }
 
     .hebergements-cartes-info {
         width: 90%;
-        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-self: center;
+    }
+
+    .hebergements-cartes h2 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .hebergements-cartes p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .hebergements-cartes img {
+        height: 50%;
+    }
+
+    .hebergements-cartes-info {
+        height: 45%;
     }
 
     .hebergements-classification i {
-        color: #0065FC;
+        font-size: 14px;
     }
 
-    .hebergements-classification .etoile-grise {
-        color: whitesmoke;
+    #hebergements-marseille h3 {
+        margin-top: 0px;
     }
-
-    #hebergements-pluspopulaire {
-        width: 25%;
-        height: 100%;
-        background-color: #F2F2F2;
-        border-radius: 16px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #hebergement-pluspopulaire-title {
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #hebergements-pluspopulaires-options {
-        width: 90%;
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .hebergements-pluspopulaires-cartes {
-        width: 100%;
-        height: 130px;
-        display: flex;
-        justify-content: space-around;
-        background-color: white;
-        border-radius: 16px;
-        box-shadow: 0 2px 2px 0 grey;
-    }
-
-    .hebergements-pluspopulaires-cartes img {
-        width: 45%;
-        height: 95%;
-        object-fit: cover;
-        align-self: center;
-        border-radius: 16px 0 0 16px;
-    }
-
-    .hebergements-pluspopulaires-info {
-        height: 100%;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-    }
+}
 
 /* Mobile */
 
@@ -654,6 +738,10 @@
 
     .hebergements-pluspopulaires-cartes {
         height: 30%;
+    }
+
+    .hebergements-pluspopulaires-info {
+        justify-content: space-evenly;
     }
 
     .hebergements-pluspopulaires-info p {
