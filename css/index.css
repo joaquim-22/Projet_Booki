@@ -7,22 +7,23 @@ body{
 .act_titre{
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
+    margin-left: 2%;
 }
 .activites{
     display : flex;
     width : 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-p{
+.activites p{
     font-family: 'Raleway', sans-serif;
     font-size: 10px;
     font-weight: bold;
-    margin-left: 2px;
+    margin-left: 10px;
 }
 .div_activites{
     display: flex;
-    justify-content: space-around;
-    width: 48%;
+    justify-content: space-evenly;
+    width: 50%;
     height: 300px;
 }
 .activites_droite{
@@ -38,7 +39,15 @@ p{
     width: 45%;
     border-radius: 16px;
     height: 100%;
-    box-shadow: 0 4px 4px 0 grey;
+    box-shadow: 0 2px 2px 0 grey;
+}
+#big_card{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    border-radius: 16px;
+    height: 100%;
+    box-shadow: 0 2px 2px 0 grey;
 }
 .activites_gimg{
     object-fit: cover;
@@ -50,10 +59,118 @@ p{
     flex-direction: column;;
     height: 40%;
     border-radius: 16px;
-    box-shadow: 0 4px 4px 0 grey;
+    box-shadow: 0 2px 2px 0 grey;
+    justify-content: flex-end;
+}
+.littlecard2{
+    display: flex;
+    flex-direction: column;;
+    height: 55%;
+    border-radius: 16px;
+    box-shadow: 0 2px 2px 0 grey;
+    justify-content: flex-end;
 }
 .activites_limg{
     object-fit: cover;
-    height: 60%;
+    height: 75%;
     border-radius: 20px 20px 0 0;
+}
+/*Tablette*/
+@media screen and (max-width : 991px) {
+    .act_titre{
+        font-size: 34px;
+        margin-left: 7%;
+    }
+    .activites{
+        flex-direction : column;
+        height: 1250px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .activites p{
+        font-size: 22px;
+    }
+    .div_activites{
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 500px;
+        width: 90%;
+        align-items: center;
+    }
+    .activites_droite{
+        margin-top: 5%;
+        justify-content: space-between;
+        width: 95%;
+        flex-direction: row;
+    }
+    .bigcard{
+        width: 95%;
+        height: 40%;
+    }
+    .activites_gimg{
+        height: 70%;
+    }
+    .littlecard{
+        width: 47%;
+    }
+    .littlecard2{
+        width: 47%;
+        height: 40%;
+    }
+    .activites_limg{
+        height: 70%
+    }
+    #big_card{
+        width: 95%;
+        height: 40%;
+        margin-bottom: 3%;
+    }
+}
+/*Mobile*/
+@media screen and (max-width: 767px) {
+    .act_titre{
+        font-size: 34px;
+        margin-left: 7%;
+    }
+    .activites{
+        flex-direction : column;
+        height: 1250px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .activites p{
+        font-size: 22px;
+    }
+    .div_activites{
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 500px;
+        width: 90%;
+        align-items: center;
+    }
+    .activites_droite{
+        margin-top: 5%;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 95%;
+    }
+    .littlecard{
+        width: 100%;
+    }
+    .littlecard2{
+        width: 100%;
+    }
+    .bigcard{
+        width: 95%;
+        height: 40%;
+    }
+    #big_card{
+        width: 95%;
+        height: 40%;
+    }
+    .activites_gimg{
+        height: 70%;
+    }
+
+
 }
