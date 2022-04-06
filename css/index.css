@@ -1,55 +1,61 @@
+html, body {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 /* Section Header Zahia */
 
-html, body {
-    
-}
-
-main{
-    width: 90%;
-    height: 100%;
-    margin: 0 auto;
-}
-
-header{
+header {
     display:flex;
     flex-direction:column;
     justify-content: space-around;
-    width: 100%;
+    width: 90%;
     font-family: 'Raleway', sans-serif;
+    align-self: center;
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.logo img{
+.logo img {
     width: 200px;
     height: 80px;
 }
 
-.menu{
+.menu {
     margin-top: 40px;
 }
 
-.menu a{
+.menu a {
     text-decoration: none;
     font-size: 20px;
     color: black;
     margin-left: 50px;
 }
-.menu a:hover{
+
+.menu a:hover {
     color:#0065fc;
     border-top:3px solid #0065fc;
     padding: 30px;
 }
-.info{
+
+.info {
     font-size: 20px;
     margin-bottom: 10px;
 }
-.recherche{
+
+.recherche {
     position: relative;
     width: 400px;
     height: 50px;
@@ -57,57 +63,68 @@ nav{
     border-radius: 10px;
     background-color: #dacbcb;
 }
-.location{
+
+.location {
     font-size:20px;
     width: 8%;
     height: 35px;
     float: left;
     padding: 15px;
 }
-input[ type="search"]{
+
+input[ type="search"] {
     font-weight: bold;
     width: 55%;
     height: 50px;;
     font-size: 15px;
     border: none;
 }
-a.iconr{
+
+a.iconr {
     display: none;
 }
-button{
+
+button {
     position: absolute;
-    width:30%;
-    height:100%;
+    width: 30%;
+    height: 100%;
     font-size: 15px;
     color: white;
     border: none;
     float: right;
-    background-color:#0065fc;
+    background-color: #0065fc;
     padding: 10px;
     border-radius: 0px 10px 10px 0px;
 }
-.filtres{
+
+.filtres {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
 }
-.filtres p{
+
+.filtres p {
     padding:5px;
     font-weight: bold;
 }
-.iconfiltre{
+
+.iconfiltre {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.icon2 {
     display: flex;
     flex-direction: row;
 }
-.icon2{
+
+.icon1 {
     display: flex;
     flex-direction: row;
 }
-.icon1{
-    display: flex;
-    flex-direction: row;
-}
-.economique,.familial,.romantique{
+
+.economique,.familial,.romantique {
     display: flex;
     align-items: center;
     width: 145px;
@@ -116,7 +133,8 @@ button{
     margin-left: 20px;
     border: 2px solid #dacbcb;
 }
-.animaux{
+
+.animaux {
     display: flex;
     align-items: center;
     width: 200px;
@@ -125,7 +143,8 @@ button{
     border-radius: 30px;
     border: 2px solid #dacbcb;
 }
-.economique a,.familial a,.romantique a{
+
+.economique a,.familial a,.romantique a {
     display: flex;
     width: 42px;
     height:42px;
@@ -136,7 +155,8 @@ button{
     justify-content: center;
     align-items: center;
 }
-.animaux a{
+
+.animaux a {
     display: flex;
     width: 42px;
     height:42px;
@@ -147,15 +167,18 @@ button{
     justify-content: center;
     align-items: center;
 }
-.filtres a:hover{
+
+.filtres a:hover {
     color: white;
     background-color:#0065fc;
 }
-.infologement{
+
+.infologement {
     display: flex;
     flex-direction: row;
 }
-.iconinfo{
+
+.iconinfo {
     width: 30px;
     height: 30px;
     border-radius: 25px;
@@ -165,21 +188,24 @@ button{
     border: 1px solid #dacbcb ;
     margin:5px 15px 0px 0px;
 }
-.iconinfo a{ 
+
+.iconinfo a { 
     color:#0065fc ;
-}  
-.iconinfo a:hover{ 
+} 
+
+.iconinfo a:hover { 
     color:red ;
 }
 
 /* Section Hebergements Joaquim */
 
 #hebergements {
-    width: 100%;
+    width: 90%;
     height: 550px;
     font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: space-between;
+    align-self: center;
 }
 
 #hebergements-marseille a {
@@ -192,12 +218,16 @@ button{
     font-size: 22px;
 }
 
-#hebergements h2 {
+.hebergements-cartes-info h2 {
+    font-size: 15px;
+}
+
+.hebergements-pluspopulaires-info h2 {
     font-size: 15px;
     margin: 0px;
 }
 
-#hebergements p {
+.hebergements-cartes p {
     font-size: 13px;
     margin: 0px;
 }
@@ -321,28 +351,24 @@ button{
 
 /* Section Activités Thomas */
 
-body {
-    margin: 0;
-}
-* {
-    box-sizing: border-box;
-}
-
 .act_titre {
-    font-size: 18px;
+    width: 100%;
+    font-size: 22px;
     font-family: 'Raleway', sans-serif;
     margin-left: 2%;
 }
 
 #activites {
     display : flex;
-    width : 100%;
+    flex-wrap: wrap;
+    width : 90%;
     justify-content: space-evenly;
+    align-self: center;
 }
 
 #activites p {
     font-family: 'Raleway', sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: bold;
     margin-left: 10px;
 }
@@ -351,7 +377,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     width: 50%;
-    height: 300px;
+    height: 400px;
 }
 
 .activites_droite {
@@ -390,24 +416,32 @@ body {
     display: flex;
     flex-direction: column;;
     height: 40%;
+    width: 85%;
     border-radius: 16px;
     box-shadow: 0 2px 2px 0 grey;
     justify-content: flex-end;
+    align-self: center;
 }
 
 .littlecard2 {
     display: flex;
     flex-direction: column;;
-    height: 55%;
+    height: 50%;
+    width: 85%;
     border-radius: 16px;
     box-shadow: 0 2px 2px 0 grey;
     justify-content: flex-end;
+    align-self: center;
 }
 
 .activites_limg {
     object-fit: cover;
     height: 75%;
     border-radius: 20px 20px 0 0;
+}
+
+.little-card-modif {
+    width: 90%;
 }
 
 /* Section Footer */
@@ -441,18 +475,29 @@ footer a {
 
 /* Section Header Tablette Zahia */
 
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
     header{
         display:flex;
         flex-direction:column;
         justify-content: space-around;
-        width:90%;
+        width: 90%;
         font-family: 'Raleway', sans-serif;
+        align-items: center;
     }
 
     nav{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        justify-self: center;
+    }
+
+    .logo {
+        align-self: flex-end;
     }
 
     .logo img{
@@ -529,6 +574,7 @@ footer a {
         display: flex;
         flex-direction: row;
         margin-top: 20px;
+        width: 60%;
     }
 
     .filtres p{
@@ -539,6 +585,7 @@ footer a {
     .iconfiltre{
         display: flex;
         flex-direction: row;
+        height: 100px;
     }
 
     .icon2{
@@ -628,12 +675,12 @@ footer a {
     
     /* Section Hebergements Tablette Joaquim */
 
-    .hebergements {
+    #hebergements {
         flex-direction: column-reverse;
         height: 1200px;
     }
 
-    .hebergements h1 {
+    #hebergements h1 {
         font-size: 24px;
     }
 
@@ -652,7 +699,7 @@ footer a {
     }
 
     .hebergements-pluspopulaires-info h2 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .hebergements-pluspopulaires-info p {
@@ -664,6 +711,10 @@ footer a {
         width: 100%;
         height: 50%;
         background-color: white;
+    }
+
+    #hebergements-options {
+        width: 100%;
     }
 
     .hebergements-cartes {
@@ -683,11 +734,11 @@ footer a {
     .hebergements-cartes-info h2 {
         margin-top: 0px;
         margin-bottom: 0px;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .hebergements-cartes-info p {
-        font-size: 16px;
+        font-size: 18px;
         margin-top: 0px;
         margin-bottom: 0px;
     }
@@ -696,16 +747,17 @@ footer a {
         margin-top: 0px;
     }
 
-    /* Section Activites Tablette Thomas */
+    /* Section Activités Tablette Thomas */
 
     .act_titre{
+        width: 90%;
         font-size: 34px;
         margin-left: 7%;
     }
 
     #activites {
         flex-direction : column;
-        height: 1250px;
+        height: 900px;
         align-items: center;
         justify-content: flex-start;
     }
@@ -717,7 +769,7 @@ footer a {
     .div_activites {
         flex-direction: column;
         justify-content: flex-start;
-        height: 500px;
+        height: 400px;
         width: 90%;
         align-items: center;
     }
@@ -726,6 +778,7 @@ footer a {
         margin-top: 5%;
         justify-content: space-between;
         width: 95%;
+        height: 45%;
         flex-direction: row;
     }
 
@@ -740,11 +793,12 @@ footer a {
 
     .littlecard {
         width: 47%;
+        height: 80%;
     }
 
     .littlecard2 {
         width: 47%;
-        height: 40%;
+        height: 80%;
     }
 
     .activites_limg {
@@ -753,16 +807,17 @@ footer a {
 
     #big_card {
         width: 95%;
-        height: 40%;
+        height: 50%;
         margin-bottom: 3%;
     }
 
     /* Section Footer Tablette Joaquim */
 
     footer {
+        width: 100%;
         height: auto;
         flex-wrap: wrap;
-        justify-content: unset;
+        justify-content: flex-end;
         font-size: 16px;
     }
 
@@ -772,7 +827,6 @@ footer a {
 
     .footer-boxs {
         width: 45%;
-        margin-left: 30px;
     }
 }
 
@@ -782,25 +836,30 @@ footer a {
 
     /* Section Header Mobile Zahia */
 
-    main{
+    main {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
+
     }
 
-    header{
+    header {
         display:flex;
         flex-direction:column;
         justify-content:center;
         align-items:flex-start;
-        width: 100%;
+        width: 90%;
         font-family: 'Raleway', sans-serif;
+        align-items: center;
     }
 
     nav{
         display: flex;
         flex-direction:column;
+        align-self: center;
+        width: 100%;
     }
 
     .logo{
@@ -816,19 +875,24 @@ footer a {
     .menu{
         display: flex;
         align-items:flex-start;
-        justify-content:center;  
+        justify-content:center;
+        justify-content: space-evenly; 
     }
 
-    .menu a{
+    .menu a {
         text-decoration: none;
         font-size: 20px;
         color: black;
         border-bottom:3px solid #dacbcb;
+        margin-left: 0px;
     }
 
     .menu :hover{
         color:#0065fc;
         border-bottom:3px solid #0065fc;
+        padding-left: 0px;
+        width: 50%;
+        justify-items: center;
     }
 
     .info{
@@ -882,6 +946,7 @@ footer a {
     .filtres{
         display: flex;
         flex-direction:column;
+        margin-top: 0px;
     }
 
     .iconfiltre{
@@ -938,6 +1003,7 @@ footer a {
         background-color: #c4c4f9;
         justify-content: center;
         align-items: center;
+        margin-left: 0px;
     }
 
     .animaux a{
@@ -1040,7 +1106,7 @@ footer a {
     .hebergements-cartes-info p {
         margin-top: 0px;
         margin-bottom: 0px;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .hebergements-cartes img {
@@ -1056,75 +1122,90 @@ footer a {
         font-size: 14px;
     }
 
+    #hebergements h1 {
+        font-size: 26px;
+    }
+
+    
+
     #hebergements-marseille h3 {
         margin-top: 0px;
     }
 
-    /* Section Mobile Activités Thomas */
+    /* Section Activités Mobile Thomas */
 
-    .act_titre{
-        font-size: 34px;
-        margin-left: 7%;
+    .act_titre {
+        font-size: 28px;
+        width: 80%;
     }
 
-    #activites{
+    #activites {
         flex-direction : column;
-        height: 1250px;
+        height: 1600px;
+        width: 100%;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
-    #activites p{
+    #activites p {
         font-size: 22px;
     }
 
-    .div_activites{
+    .div_activites {
         flex-direction: column;
         justify-content: flex-start;
-        height: 500px;
+        height: 750px;
         width: 90%;
         align-items: center;
     }
 
-    .activites_droite{
+    .activites_droite {
         margin-top: 5%;
         flex-direction: column;
         justify-content: space-around;
-        width: 95%;
+        width: 90%;
     }
 
-    .littlecard{
+    .littlecard {
         width: 100%;
+        height: 200px;
     }
 
-    .littlecard2{
+    .littlecard2 {
         width: 100%;
+        height: 200px;
     }
 
-    .bigcard{
-        width: 95%;
-        height: 40%;
+    .bigcard {
+        width: 90%;
+        height: 200px;
     }
 
-    #big_card{
-        width: 95%;
-        height: 40%;
+    #big_card {
+        width: 90%;
+        height: 200px;
     }
 
-    .activites_gimg{
+    .activites_gimg {
         height: 70%;
     }
 
     /* Section Footer Mobile */
 
     footer {
-        height: 400px;
+        height: 500px;
         flex-direction: column;
+    }
+
+    footer a {
+        height: auto;
+        margin: 5px 0 5px 0;
     }
 
     .footer-boxs {
         width: 90%;
-        height: 120px;
+        height: 180px;
         align-self: center;
+        font-size: 16px;
     }
 }
