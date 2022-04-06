@@ -13,156 +13,160 @@ header{
     width: 100%;
     font-family: 'Raleway', sans-serif;
 }
-    nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 20px;
-    }
-    .logo img{
-        width: 200px;
-        height: 80px;
-    }
-    .menu{
-       margin-top: 40px;
-    }
-    .menu a{
-        text-decoration: none;
-         font-size: 20px;
-         color: black;
-         margin-left: 50px;
-    }
-    .menu a:hover{
-        color:#0065fc;
-        border-top:3px solid #0065fc;
-        padding: 30px;
-    }
-    .info{
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    .recherche{
-        position: relative;
-        width: 400px;
-        height: 50px;
-        border: 1px solid #dacbcb;
-        border-radius: 10px;
-        background-color: #dacbcb;
-    }
-    .location{
-        font-size:20px;
-        width: 8%;
-        height: 35px;
-        float: left;
-        padding: 15px;
-    }
-    input[ type="search"]{
-        font-weight: bold;
-        width: 55%;
-        height: 50px;;
-        font-size: 15px;
-        border: none;
-    }
-    a.iconr{
-        display: none;
-    }
-    button{
-        position: absolute;
-        width:30%;
-        height:100%;
-        font-size: 15px;
-        color: white;
-        border: none;
-        float: right;
-        background-color:#0065fc;
-        padding: 10px;
-        border-radius: 0px 10px 10px 0px;
-    }
-    .filtres{
-        display: flex;
-        flex-direction: row;
-        margin-top: 20px;
-    }
-    .filtres p{
-        padding:5px;
-        font-weight: bold;
-    }
-    .iconfiltre{
-        display: flex;
-        flex-direction: row;
-    }
-    .icon2{
-        display: flex;
-        flex-direction: row;
-    }
-    .icon1{
-        display: flex;
-        flex-direction: row;
-    }
-    .economique,.familial,.romantique{
-        display: flex;
-        align-items: center;
-        width: 145px;
-        height: 38px;
-        border-radius: 30px;
-        margin-left: 20px;
-        border: 2px solid #dacbcb;
-    }
-    .animaux{
-        display: flex;
-        align-items: center;
-        width: 200px;
-        height: 38px;
-        margin-left: 20px;
-        border-radius: 30px;
-        border: 2px solid #dacbcb;
-    }
-    .economique a,.familial a,.romantique a{
-        display: flex;
-        width: 42px;
-        height:42px;
-        text-decoration: none; 
-        border-radius: 25px;
-        color:#0065fc;
-        background-color: #c4c4f9;
-        justify-content: center;
-        align-items: center;
-    }
-    .animaux a{
-        display: flex;
-        width: 42px;
-        height:42px;
-        text-decoration: none; 
-        border-radius: 25px;
-        color:#0065fc;
-        background-color: #c4c4f9;
-        justify-content: center;
-        align-items: center;
-    }
-    .filtres a:hover{
-        color: white;
-        background-color:#0065fc;
-    }
-    .infologement{
-        display: flex;
-        flex-direction: row;
-    }
-    .iconinfo{
-        width: 30px;
-        height: 30px;
-        border-radius: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #dacbcb ;
-        margin:5px 15px 0px 0px;
-    }
-    .iconinfo a{ 
-        color:#0065fc ;
-    }  
-    .iconinfo a:hover{ 
-        color:red ;
-    }
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logo img{
+    width: 200px;
+    height: 80px;
+}
+
+.menu{
+    margin-top: 40px;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    margin-left: 50px;
+}
+.menu a:hover{
+    color:#0065fc;
+    border-top:3px solid #0065fc;
+    padding: 30px;
+}
+.info{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.recherche{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    border: 1px solid #dacbcb;
+    border-radius: 10px;
+    background-color: #dacbcb;
+}
+.location{
+    font-size:20px;
+    width: 8%;
+    height: 35px;
+    float: left;
+    padding: 15px;
+}
+input[ type="search"]{
+    font-weight: bold;
+    width: 55%;
+    height: 50px;;
+    font-size: 15px;
+    border: none;
+}
+a.iconr{
+    display: none;
+}
+button{
+    position: absolute;
+    width:30%;
+    height:100%;
+    font-size: 15px;
+    color: white;
+    border: none;
+    float: right;
+    background-color:#0065fc;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+}
+.filtres{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.filtres p{
+    padding:5px;
+    font-weight: bold;
+}
+.iconfiltre{
+    display: flex;
+    flex-direction: row;
+}
+.icon2{
+    display: flex;
+    flex-direction: row;
+}
+.icon1{
+    display: flex;
+    flex-direction: row;
+}
+.economique,.familial,.romantique{
+    display: flex;
+    align-items: center;
+    width: 145px;
+    height: 38px;
+    border-radius: 30px;
+    margin-left: 20px;
+    border: 2px solid #dacbcb;
+}
+.animaux{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 38px;
+    margin-left: 20px;
+    border-radius: 30px;
+    border: 2px solid #dacbcb;
+}
+.economique a,.familial a,.romantique a{
+    display: flex;
+    width: 42px;
+    height:42px;
+    text-decoration: none; 
+    border-radius: 25px;
+    color:#0065fc;
+    background-color: #c4c4f9;
+    justify-content: center;
+    align-items: center;
+}
+.animaux a{
+    display: flex;
+    width: 42px;
+    height:42px;
+    text-decoration: none; 
+    border-radius: 25px;
+    color:#0065fc;
+    background-color: #c4c4f9;
+    justify-content: center;
+    align-items: center;
+}
+.filtres a:hover{
+    color: white;
+    background-color:#0065fc;
+}
+.infologement{
+    display: flex;
+    flex-direction: row;
+}
+.iconinfo{
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dacbcb ;
+    margin:5px 15px 0px 0px;
+}
+.iconinfo a{ 
+    color:#0065fc ;
+}  
+.iconinfo a:hover{ 
+    color:red ;
+}
 
 /* Section Hebergements Joaquim */
 
@@ -311,17 +315,134 @@ header{
     font-size: 18px;
 }
 
+/* Section Activités Thomas */
+
+body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.act_titre {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 2%;
+}
+
+#activites {
+    display : flex;
+    width : 100%;
+    justify-content: space-evenly;
+}
+
+#activites p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.div_activites {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 300px;
+}
+
+.activites_droite {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bigcard {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    border-radius: 16px;
+    height: 100%;
+    box-shadow: 0 2px 2px 0 grey;
+}
+
+#big_card {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    border-radius: 16px;
+    height: 100%;
+    box-shadow: 0 2px 2px 0 grey;
+}
+
+.activites_gimg {
+    object-fit: cover;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.littlecard {
+    display: flex;
+    flex-direction: column;;
+    height: 40%;
+    border-radius: 16px;
+    box-shadow: 0 2px 2px 0 grey;
+    justify-content: flex-end;
+}
+
+.littlecard2 {
+    display: flex;
+    flex-direction: column;;
+    height: 55%;
+    border-radius: 16px;
+    box-shadow: 0 2px 2px 0 grey;
+    justify-content: flex-end;
+}
+
+.activites_limg {
+    object-fit: cover;
+    height: 75%;
+    border-radius: 20px 20px 0 0;
+}
+
+/* Section Footer */
+
+footer {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background-color: #F2F2F2;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    height: 30px;
+}
+
+.footer-boxs {
+    height: auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
 /*Tablette*/
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
-    /* Section Header Tablette Zahia */
+/* Section Header Tablette Zahia */
 
     main{
         width:100%;
         height: 100%;
         padding:20px;
-    }   
+    }
+
     header{
         display:flex;
         flex-direction:column;
@@ -329,34 +450,41 @@ header{
         width:90%;
         font-family: 'Raleway', sans-serif;
     }
+
     nav{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+
     .logo img{
-       width: 150px;
-       height: 80px;
+        width: 150px;
+        height: 80px;
     }
+
     .menu{
         display: flex;
         justify-content: space-around;
         margin-top: 30px;
     }
+
     .menu a{
         text-decoration: none;
         font-size: 20px;
         color: black;
         padding:30px;
     }
+
     .menu a:hover{
         color:#0065fc;
         border-top:3px solid #0065fc;
     }
+
     .info{
         font-size: 15px;
         margin-bottom: 10px;
     }
+
     .recherche{
         position: relative;
         width: 400px;
@@ -365,6 +493,7 @@ header{
         border-radius: 10px;
         background-color: #dacbcb;
     }
+
     .location{
         font-size:20px;
         width: 8%;
@@ -372,6 +501,7 @@ header{
         float: left;
         padding: 15px;
     }
+
     input[ type="search"]{
         font-weight: bold;
         width: 55%;
@@ -379,9 +509,11 @@ header{
         font-size: 15px;
         border: none;
     }
+
     a.iconr{
         display: none;
     }
+
     button{
         position: absolute;
         width:30%;
@@ -394,29 +526,35 @@ header{
         padding: 10px;
         border-radius: 0px 10px 10px 0px;
     }
+
     .filtres{
         display: flex;
         flex-direction: row;
         margin-top: 20px;
     }
+
     .filtres p{
         padding:5px;
         font-weight: bold;
     }
+
     .iconfiltre{
         display: flex;
         flex-direction: row;
     }
+
     .icon2{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
+
     .icon1{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
+
     .economique,.familial,.romantique{
         display: flex;
         align-items: center;
@@ -426,6 +564,7 @@ header{
         margin-left: 15px;
         border: 2px solid #dacbcb;
     }
+
     .animaux{
         display: flex;
         align-items: center;
@@ -435,6 +574,7 @@ header{
         border-radius: 30px;
         border: 2px solid #dacbcb;
     }
+
     .economique a,.familial a,.romantique a{
         display: flex;
         width: 42px;
@@ -446,6 +586,7 @@ header{
         justify-content: center;
         align-items: center;
     }
+
     .animaux a{
         display: flex;
         width: 42px;
@@ -457,14 +598,17 @@ header{
         justify-content: center;
         align-items: center;
     }
+
     .filtres a:hover{
         color: white;
         background-color:#0065fc;
     }
+
     .infologement{
         display: flex;
         flex-direction: row;
     }
+
     .iconinfo{
         width: 30px;
         height: 30px;
@@ -475,9 +619,11 @@ header{
         border: 1px solid #dacbcb ;
         margin:5px 15px 0px 0px;
     }
+
     .iconinfo a{ 
         color:#0065fc;
     }
+
     .iconinfo a:hover{ 
         color:red ;
     }
@@ -551,11 +697,93 @@ header{
     #hebergements-marseille h3 {
         margin-top: 0px;
     }
+
+    /* Section Activites Tablette Thomas */
+
+    .act_titre{
+        font-size: 34px;
+        margin-left: 7%;
+    }
+
+    #activites {
+        flex-direction : column;
+        height: 1250px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #activites p {
+        font-size: 22px;
+    }
+
+    .div_activites {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 500px;
+        width: 90%;
+        align-items: center;
+    }
+
+    .activites_droite {
+        margin-top: 5%;
+        justify-content: space-between;
+        width: 95%;
+        flex-direction: row;
+    }
+
+    .bigcard {
+        width: 95%;
+        height: 40%;
+    }
+
+    .activites_gimg {
+        height: 70%;
+    }
+
+    .littlecard {
+        width: 47%;
+    }
+
+    .littlecard2 {
+        width: 47%;
+        height: 40%;
+    }
+
+    .activites_limg {
+        height: 70%
+    }
+
+    #big_card {
+        width: 95%;
+        height: 40%;
+        margin-bottom: 3%;
+    }
+
+    /* Section Footer Tablette Joaquim */
+
+    footer {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: unset;
+        font-size: 16px;
+    }
+
+    footer h3 {
+        font-size: 18px;
+    }
+
+    .footer-boxs {
+        width: 45%;
+        margin-left: 30px;
+    }
 }
 
 /* Mobile */
 
 @media screen and (max-width: 767px){
+
+    /* Section Header Mobile Zahia */
+
     main{
         display: flex;
         flex-direction: column;
@@ -572,23 +800,28 @@ header{
         width: 100%;
         font-family: 'Raleway', sans-serif;
     }
+
     nav{
         display: flex;
         flex-direction:column;
     }
+
     .logo{
         display: flex;
        justify-content:center;
     }
+
     .logo img{
         width: 150px;
         height: 80px;
     }
+
     .menu{
         display: flex;
         align-items:flex-start;
         justify-content:center;  
     }
+
     .menu a{
         text-decoration: none;
         font-size: 20px;
@@ -596,14 +829,17 @@ header{
         padding: 30px;
         border-bottom:3px solid #dacbcb;
     }
+
     .menu :hover{
         color:#0065fc;
         border-bottom:3px solid #0065fc;
     }
+
     .info{
         font-size: 15px;
         margin-bottom: 10px;
     }
+
     .recherche{
         position: relative;
         width:320px;
@@ -613,6 +849,7 @@ header{
         background-color: #0065fc;
         margin-bottom: 10px;
     }
+
     .location{
         font-size:20px;
         width: 8%;
@@ -622,6 +859,7 @@ header{
         background-color: #dacbcb;
         border-radius: 10px 0px 0px 10px;
     }
+
     input[ type="search"]{
         font-weight: bold;
         width: 68%;
@@ -629,42 +867,52 @@ header{
         font-size: 15px;
         border: none;
     }
+
     .fa-solid fa-magnifying-glass{
         position: absolute;
         color: white;
         border: none;
     }
+
     .iconr{
         padding: 10px;
         color: white;
     }
+
     button{
      display:none;
     }
+
     .filtres{
         display: flex;
         flex-direction:column;
     }
+
     .iconfiltre{
         display: flex;
         flex-direction: column;
     }
+
     .icon2{
         display: flex;
         flex-direction:column;
         margin-top: 10px;
     }
+
     .icon1{
         display: flex;
         flex-direction:row;
     }
+
     .economique{
         margin-right: 20px;
     }
+
     .filtres p{
         padding:5px;
         font-weight: bold;
     }
+
     .economique,.familial,.romantique{
         display: flex;
         align-items: center;
@@ -673,6 +921,7 @@ header{
         border-radius: 30px;
         border: 2px solid #dacbcb;
     }
+
     .animaux{
         display: flex;
         align-items: center;
@@ -682,6 +931,7 @@ header{
         border-radius: 30px;
         border: 2px solid #dacbcb;
     }
+
     .economique a,.familial a,.romantique a{
         display: flex;
         width: 42px;
@@ -693,6 +943,7 @@ header{
         justify-content: center;
         align-items: center;
     }
+
     .animaux a{
         display: flex;
         width: 42px;
@@ -704,15 +955,18 @@ header{
         justify-content: center;
         align-items: center;
     }
+
     .filtres a:hover{
         color: white;
         background-color:#0065fc;
     }
+
     .infologement{
         display: flex;
         flex-direction: row;
         margin-top: 10px;
     }
+
     .iconinfo{
         width: 25px;
         height: 25px;
@@ -723,14 +977,16 @@ header{
         border: 1px solid #dacbcb ;
         margin:10px 15px 0px 0px;
     }
+
     .iconinfo a{ 
         color:#0065fc ;
-    } 
+    }
+
     .iconinfo a:hover{ 
         color:red ;
     }
-
-    /* Section Mobile Joaquim */
+    
+    /* Section Hebergements Mobile Joaquim */
 
 <<<<<<< HEAD
 #hebergements-pluspopulaire {
@@ -947,5 +1203,73 @@ header{
 
     #hebergements-marseille h3 {
         margin-top: 0px;
+    }
+
+    /* Section Mobile Activités Thomas */
+
+    .act_titre{
+        font-size: 34px;
+        margin-left: 7%;
+    }
+
+    #activites{
+        flex-direction : column;
+        height: 1250px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #activites p{
+        font-size: 22px;
+    }
+
+    .div_activites{
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 500px;
+        width: 90%;
+        align-items: center;
+    }
+
+    .activites_droite{
+        margin-top: 5%;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 95%;
+    }
+
+    .littlecard{
+        width: 100%;
+    }
+
+    .littlecard2{
+        width: 100%;
+    }
+
+    .bigcard{
+        width: 95%;
+        height: 40%;
+    }
+
+    #big_card{
+        width: 95%;
+        height: 40%;
+    }
+
+    .activites_gimg{
+        height: 70%;
+    }
+
+    /* Section Footer Mobile */
+
+    footer {
+        height: 400px;
+        flex-direction: column;
+    }
+
+    .footer-boxs {
+        width: 90%;
+        height: 120px;
+        align-self: center;
     }
 }
