@@ -70,6 +70,8 @@ nav {
     height: 35px;
     float: left;
     padding: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .fa-location-dot:before, .fa-map-marker-alt:before {
@@ -99,6 +101,7 @@ button {
     background-color: #0065fc;
     padding: 10px;
     border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
 }
 
 .filtres {
@@ -265,6 +268,7 @@ button {
     background-color: white;
     border-radius: 16px;
     box-shadow: 0 2px 2px 0 grey;
+    cursor: pointer;
 }
 
 .hebergements-cartes img {
@@ -291,7 +295,7 @@ button {
 }
 
 .hebergements-classification .etoile-grise {
-    color: whitesmoke;
+    color: #F2F2F2;
 }
 
 #hebergements-pluspopulaire {
@@ -327,6 +331,7 @@ button {
     background-color: white;
     border-radius: 16px;
     box-shadow: 0 2px 2px 0 grey;
+    cursor: pointer;
 }
 
 .hebergements-pluspopulaires-cartes img {
@@ -402,6 +407,7 @@ button {
     border-radius: 16px;
     height: 100%;
     box-shadow: 0 2px 2px 0 grey;
+    cursor: pointer;
 }
 
 #big_card {
@@ -411,6 +417,7 @@ button {
     border-radius: 16px;
     height: 100%;
     box-shadow: 0 2px 2px 0 grey;
+    cursor: pointer;
 }
 
 .activites_gimg {
@@ -428,6 +435,7 @@ button {
     box-shadow: 0 2px 2px 0 grey;
     justify-content: flex-end;
     align-self: center;
+    cursor: pointer;
 }
 
 .littlecard2 {
@@ -439,6 +447,7 @@ button {
     box-shadow: 0 2px 2px 0 grey;
     justify-content: flex-end;
     align-self: center;
+    cursor: pointer;
 }
 
 .activites_limg {
@@ -577,6 +586,7 @@ footer a {
         background-color:#0065fc;
         padding: 10px;
         border-radius: 0px 10px 10px 0px;
+        cursor: pointer;
     }
 
     .filtres {
@@ -953,7 +963,7 @@ footer a {
         height: 50px;
         border: 1px solid #dacbcb;
         border-radius: 10px;
-        background-color: #0065fc;
+        background-color: white;
         margin-bottom: 10px;
     }
 
@@ -979,7 +989,13 @@ footer a {
         display: flex;
         color: white;
         float: right;
-        padding: 17px 15px 0 0;
+        width: 15%;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        background-color: #0065FC;
+        border-radius: 10px;
+        cursor: pointer;
     }
 
     button {
