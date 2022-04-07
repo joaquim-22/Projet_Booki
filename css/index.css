@@ -72,6 +72,10 @@ nav {
     padding: 15px;
 }
 
+.fa-location-dot:before, .fa-map-marker-alt:before {
+    color: black;
+}
+
 input[ type="search"] {
     font-weight: bold;
     width: 55%;
@@ -80,7 +84,7 @@ input[ type="search"] {
     border: none;
 }
 
-a.iconr {
+.iconr {
     display: none;
 }
 
@@ -110,7 +114,6 @@ button {
 
 .iconfiltre {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -218,6 +221,10 @@ button {
     font-size: 22px;
 }
 
+#hebergement-pluspopulaire-title h2 {
+    font-size: 22px;
+}
+
 .hebergements-cartes-info h2 {
     font-size: 15px;
 }
@@ -272,7 +279,7 @@ button {
 .hebergements-cartes-info {
     width: 90%;
     height: 45%;
-    align-self: flex-end;
+    align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -486,10 +493,11 @@ footer a {
         justify-content: space-around;
         width: 90%;
         font-family: 'Raleway', sans-serif;
-        align-items: center;
+        align-items: flex-start;
     }
 
     nav{
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -500,35 +508,36 @@ footer a {
         align-self: flex-end;
     }
 
-    .logo img{
+    .logo img {
         width: 150px;
         height: 80px;
     }
 
-    .menu{
+    .menu {
         display: flex;
         justify-content: space-around;
         margin-top: 30px;
     }
 
-    .menu a{
+    .menu a {
         text-decoration: none;
         font-size: 20px;
         color: black;
         padding:30px;
     }
 
-    .menu a:hover{
+    .menu a:hover {
         color:#0065fc;
         border-top:3px solid #0065fc;
     }
 
-    .info{
+    .info {
         font-size: 15px;
         margin-bottom: 10px;
+        width: 100%;
     }
 
-    .recherche{
+    .recherche {
         position: relative;
         width: 400px;
         height: 50px;
@@ -537,10 +546,10 @@ footer a {
         background-color: #dacbcb;
     }
 
-    .location{
+    .location {
         font-size:20px;
         width: 8%;
-        height: 35px;
+        height: 35px; 
         float: left;
         padding: 15px;
     }
@@ -553,11 +562,11 @@ footer a {
         border: none;
     }
 
-    a.iconr{
+    .iconr {
         display: none;
     }
 
-    button{
+    button {
         position: absolute;
         width:30%;
         height:100%;
@@ -570,57 +579,63 @@ footer a {
         border-radius: 0px 10px 10px 0px;
     }
 
-    .filtres{
+    .filtres {
         display: flex;
         flex-direction: row;
         margin-top: 20px;
-        width: 60%;
+        width: 100%;
+        height: 80px;
+        align-items: center;
     }
 
-    .filtres p{
+    .filtres p {
         padding:5px;
         font-weight: bold;
     }
 
-    .iconfiltre{
+    .iconfiltre {
         display: flex;
         flex-direction: row;
         height: 100px;
     }
 
-    .icon2{
+    .icon2 {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        width: 50%;
+        justify-content: flex-start;
+        align-items: center;
     }
 
-    .icon1{
+    .icon1 {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        width: 50%;
+        justify-content: flex-start;
+        align-items: center;
     }
 
-    .economique,.familial,.romantique{
+    .economique,.familial,.romantique {
         display: flex;
         align-items: center;
-        width: 145px;
+        width: 45%;
         height: 38px;
         border-radius: 30px;
         margin-left: 15px;
         border: 2px solid #dacbcb;
     }
 
-    .animaux{
+    .animaux {
         display: flex;
         align-items: center;
-        width: 200px;
+        width: 70%;
         height: 38px;
         margin-left: 15px;
         border-radius: 30px;
         border: 2px solid #dacbcb;
     }
 
-    .economique a,.familial a,.romantique a{
+    .economique a,.familial a,.romantique a {
         display: flex;
         width: 42px;
         height:42px;
@@ -632,7 +647,7 @@ footer a {
         align-items: center;
     }
 
-    .animaux a{
+    .animaux a {
         display: flex;
         width: 42px;
         height:42px;
@@ -644,17 +659,17 @@ footer a {
         align-items: center;
     }
 
-    .filtres a:hover{
+    .filtres a:hover {
         color: white;
         background-color:#0065fc;
     }
 
-    .infologement{
+    .infologement {
         display: flex;
         flex-direction: row;
     }
 
-    .iconinfo{
+    .iconinfo {
         width: 30px;
         height: 30px;
         border-radius: 25px;
@@ -681,6 +696,10 @@ footer a {
     }
 
     #hebergements h1 {
+        font-size: 24px;
+    }
+
+    #hebergement-pluspopulaire-title h2 {
         font-size: 24px;
     }
 
@@ -774,21 +793,41 @@ footer a {
         align-items: center;
     }
 
+    .bigcard p {
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+
+    #big_card p {
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+
+    .littlecard2 p {
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+
+    .littlecard p {
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+
     .activites_droite {
-        margin-top: 5%;
+        margin-top: 2%;
         justify-content: space-between;
-        width: 95%;
+        width: 100%;
         height: 45%;
         flex-direction: row;
     }
 
     .bigcard {
-        width: 95%;
-        height: 40%;
+        width: 100%;
+        height: 50%;
     }
 
     .activites_gimg {
-        height: 70%;
+        height: 80%;
     }
 
     .littlecard {
@@ -802,12 +841,13 @@ footer a {
     }
 
     .activites_limg {
-        height: 70%
+        height: 80%
     }
 
     #big_card {
-        width: 95%;
+        width: 100%;
         height: 50%;
+        margin-top: 20px;
         margin-bottom: 3%;
     }
 
@@ -826,7 +866,7 @@ footer a {
     }
 
     .footer-boxs {
-        width: 45%;
+        width: 30%;
     }
 }
 
@@ -850,7 +890,7 @@ footer a {
         flex-direction:column;
         justify-content:center;
         align-items:flex-start;
-        width: 90%;
+        width: 100%;
         font-family: 'Raleway', sans-serif;
         align-items: center;
     }
@@ -862,17 +902,19 @@ footer a {
         width: 100%;
     }
 
-    .logo{
+    .logo {
         display: flex;
-       justify-content:center;
+        justify-content:center;
+        height: 100px;
+        align-items: flex-end;
     }
 
-    .logo img{
+    .logo img {
         width: 150px;
         height: 80px;
     }
 
-    .menu{
+    .menu {
         display: flex;
         align-items:flex-start;
         justify-content:center;
@@ -885,24 +927,29 @@ footer a {
         color: black;
         border-bottom:3px solid #dacbcb;
         margin-left: 0px;
+        width: 50%;
+        align-self: center;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
     }
 
-    .menu :hover{
+    .menu a:hover {
         color:#0065fc;
         border-bottom:3px solid #0065fc;
         padding-left: 0px;
-        width: 50%;
-        justify-items: center;
+        border-top: 0px;
     }
 
-    .info{
+    .info {
+        width: 90%;
         font-size: 15px;
         margin-bottom: 10px;
     }
 
-    .recherche{
+    .recherche {
         position: relative;
-        width:320px;
+        width: 85%;
         height: 50px;
         border: 1px solid #dacbcb;
         border-radius: 10px;
@@ -910,43 +957,40 @@ footer a {
         margin-bottom: 10px;
     }
 
-    .location{
+    .location {
         font-size:20px;
         width: 8%;
         height:90%;
         float: left;
         padding: 15px;
         background-color: #dacbcb;
-        border-radius: 10px 0px 0px 10px;
+        border-radius: 7px 0px 0px 10px;
     }
 
-    input[ type="search"]{
+    input[ type="search"] {
         font-weight: bold;
-        width: 68%;
+        width: 65%;
         height: 50px;;
         font-size: 15px;
         border: none;
     }
 
-    .fa-solid fa-magnifying-glass{
-        position: absolute;
+    .iconr {
+        display: flex;
         color: white;
-        border: none;
+        float: right;
+        padding: 17px 15px 0 0;
     }
 
-    .iconr{
-        padding: 10px;
-        color: white;
-    }
-
-    button{
-     display:none;
+    button {
+        display:none;
     }
 
     .filtres{
         display: flex;
         flex-direction:column;
         margin-top: 0px;
+        width: 90%;
     }
 
     .iconfiltre{
@@ -981,6 +1025,7 @@ footer a {
         height: 38px;
         border-radius: 30px;
         border: 2px solid #dacbcb;
+        margin-left: 0px;
     }
 
     .animaux{
@@ -991,6 +1036,7 @@ footer a {
         margin-top: 10px;
         border-radius: 30px;
         border: 2px solid #dacbcb;
+        margin-left: 0px;
     }
 
     .economique a,.familial a,.romantique a{
@@ -1026,7 +1072,9 @@ footer a {
     .infologement{
         display: flex;
         flex-direction: row;
+        align-items: center;
         margin-top: 10px;
+        width: 90%;
     }
 
     .iconinfo{
@@ -1210,6 +1258,10 @@ footer a {
         height: 30%;
     }
 
+    #hebergement-pluspopulaire-title h2 {
+        font-size: 26px;
+    }
+
     .hebergements-pluspopulaires-info h2 {
         font-size: 18px;
     }
@@ -1298,13 +1350,14 @@ footer a {
         height: 750px;
         width: 90%;
         align-items: center;
+        margin-bottom: 10px;
     }
 
     .activites_droite {
-        margin-top: 5%;
         flex-direction: column;
         justify-content: space-around;
         width: 90%;
+        height: 500px;
     }
 
     .littlecard {
